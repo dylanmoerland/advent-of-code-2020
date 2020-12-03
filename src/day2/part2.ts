@@ -6,7 +6,7 @@ interface Policy {
   letter: string;
 }
 
-const derivePolicyFromString = (policyString: string) => {
+const derivePolicyFromString = (policyString: string): Policy => {
   const split = policyString.split(' ');
   const numbers = split[0].split('-');
 
