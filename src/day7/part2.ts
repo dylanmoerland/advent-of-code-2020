@@ -56,7 +56,7 @@ const run = async () => {
     return total + countContents(bag, bags);
   }, 0);
 
-  console.log("answer: ", answer);
+  return answer;
 };
 
 export default run;

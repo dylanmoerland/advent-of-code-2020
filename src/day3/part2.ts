@@ -123,9 +123,12 @@ const run = async () => {
   const treesTrail4 = countTreesAlongTheWay(map, trail4);
   const treesTrail5 = countTreesAlongTheWay(map, trail5);
 
-  console.log(
-    "answer: ",
-    calculate(treesTrail1, treesTrail2, treesTrail3, treesTrail4, treesTrail5)
+  return calculate(
+    treesTrail1,
+    treesTrail2,
+    treesTrail3,
+    treesTrail4,
+    treesTrail5
   );
 };
 

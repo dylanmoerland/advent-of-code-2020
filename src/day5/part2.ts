@@ -52,7 +52,7 @@ const run = async () => {
   
   const filteredSeats = allSeats.filter((id) => !allGivenSeats.includes(id));
 
-  console.log("answer: ", filteredSeats.find((id) => id > 10));
+  return filteredSeats.find((id) => id > 10);
 };
 
 export default run;

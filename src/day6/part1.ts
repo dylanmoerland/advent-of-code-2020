@@ -25,7 +25,7 @@ const run = async () => {
     return accumulator + currentValue.length;
   }, 0);
 
-  console.log("answer: ", answer);
+  return answer;
 };
 
 export default run;

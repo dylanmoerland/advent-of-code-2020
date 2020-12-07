@@ -49,7 +49,7 @@ const run = async () => {
     return highestNumber;
   }, 0);
 
-  console.log("answer: ", answer);
+  return answer;
 };
 
 export default run;

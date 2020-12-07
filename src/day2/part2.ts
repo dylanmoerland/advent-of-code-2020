@@ -29,15 +29,13 @@ const validateEntry = (policy: Policy, password: string) => {
 const run = async () => {
   const items = await readText("src/day2/data.txt");
   
-  const answer = items.reduce((accumulator, currrentValue) => {
+  return items.reduce((accumulator, currrentValue) => {
     const args = currrentValue.split(':');
     if (validateEntry(derivePolicyFromString(args[0]), args[1])) {
       return accumulator + 1;
     }
     return accumulator;
   }, 0);
-
-  console.log('answer: ', answer);
 };
 
 export default run;

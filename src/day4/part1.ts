@@ -66,14 +66,12 @@ const run = async () => {
 
   const passports = derivePassportsFromLines(items);
 
-  const answer = passports.reduce((total, passport) => {
+  return passports.reduce((total, passport) => {
     if (validatePassport(passport)) {
       return total + 1;
     }
     return total;
   }, 0);
-
-  console.log("answer: ", answer);
 };
 
 export default run;

@@ -13,10 +13,17 @@ import day6part1 from './day6/part1.ts';
 import day6part2 from './day6/part2.ts';
 import day7part1 from './day7/part1.ts';
 import day7part2 from './day7/part2.ts';
+import day8part1 from './day8/part1.ts';
+import day8part2 from './day8/part2.ts';
 
-const main = () => {
+const main = async () => {
+  const start = performance.now();
+
+  log.info(`***********************************`);
   log.info("Starting your Deno App");
-  day7part2();
+  log.info(`Answer: ${await day8part1()}`);
+  log.info(`Execution time: ${performance.now() - start}ms`);
+  log.info(`***********************************`);
 };
 
 export default main;

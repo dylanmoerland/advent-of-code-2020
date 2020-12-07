@@ -36,7 +36,7 @@ const run = () => {
     [0, 0, 0]
   );
 
-  console.log(calculate(...answer));
+  return calculate(...answer);
 };
 
 export default run;

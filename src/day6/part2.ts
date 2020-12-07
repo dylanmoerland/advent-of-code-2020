@@ -54,7 +54,7 @@ const run = async () => {
     0
   );
 
-  console.log("answer: ", answer);
+  return answer;
 };
 
 export default run;

@@ -5,23 +5,17 @@ interface Bag {
   bags?: Bag[];
 }
 
-const createBag = (line: string): Bag => {
-  const [_, noun, color] = line.trim().split(" ");
-
-  return {
-    color: noun + " " + color,
-  };
-};
-
 const derriveBagFromLine = (line: string): Bag => {
   const [noun, color] = line.split(" ");
   const fullColor = noun + " " + color;
 
-  const contentsText = line.slice(line.indexOf("contain") + 8);
+  const bags = line.slice(line.indexOf("contain") + 8).split(",").map((l) => {
+    const [_, noun, color] = l.trim().split(" ");
 
-  const bags = contentsText.split(',').reduce((acc, crr) => {
-    return [...acc, createBag(crr)];
-  }, [] as Bag[]);
+    return {
+      color: noun + " " + color,
+    };
+  });
 
   return {
     color: fullColor,
@@ -53,7 +47,7 @@ const run = async () => {
     return total;
   }, 0);
 
-  console.log("answer: ", answer);
+  return answer;
 };
 
 export default run;

@@ -58,7 +58,7 @@ const run = async () => {
 
   const map = createMap(items, 8000);
   
-  console.log("answer: ", countTreesAlongTheWay(map));
+  return countTreesAlongTheWay(map);
 };
 
 export default run;
