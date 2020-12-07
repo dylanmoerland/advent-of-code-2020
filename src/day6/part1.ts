@@ -5,8 +5,6 @@ const createGroups = (items: string[]) => {
     if (item === '') {
       accumulator.push([]);
     } else {
-
-      console.log("tesT: ", accumulator[accumulator.length - 1]);
       accumulator[accumulator.length - 1] = Array.from(
         new Set([...accumulator[accumulator.length - 1], ...item.split('')])
       );

@@ -11,10 +11,12 @@ import day5part1 from './day5/part1.ts';
 import day5part2 from './day5/part2.ts';
 import day6part1 from './day6/part1.ts';
 import day6part2 from './day6/part2.ts';
+import day7part1 from './day7/part1.ts';
+import day7part2 from './day7/part2.ts';
 
 const main = () => {
   log.info("Starting your Deno App");
-  day6part2();
+  day7part2();
 };
 
 export default main;
