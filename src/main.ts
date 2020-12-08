@@ -21,7 +21,7 @@ const main = async () => {
 
   log.info(`***********************************`);
   log.info("Starting your Deno App");
-  log.info(`Answer: ${await day8part1()}`);
+  log.info(`Answer: ${await day8part2()}`);
   log.info(`Execution time: ${performance.now() - start}ms`);
   log.info(`***********************************`);
 };
