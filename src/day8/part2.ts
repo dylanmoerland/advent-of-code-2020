@@ -61,7 +61,7 @@ const repair = (instructions: Instruction[]) => {
   }, [] as number[]);
 
   indexesOfNopsAndJmps.reduce((acc, crr) => {
-    if (done) return acc;
+    if (done) return acc; // not really proud of this...
   
     const instruction = instructions[crr];
 
