@@ -1,6 +1,5 @@
 run:
-	deno run --allow-read --allow-write --config=tsconfig.json index.ts 
-test:
+	deno run --v8-flags=--max-old-space-size=8192 --allow-read --allow-write --config=tsconfig.json index.ts
 	deno test
 format:
 	deno fmt
