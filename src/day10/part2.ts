@@ -5,9 +5,9 @@ const run = async () => {
 
   const numbers = items
     .map((item: string) => parseInt(item, 10))
-    .sort((a, b) => a - b);
+    .sort((a, b) => b - a);
 
-  const options = numbers.reverse().reduce((acc, crr) => {
+  const options = numbers.reduce((acc, crr) => {
     if (crr === Math.max(...numbers)) return { ...acc, [Math.max(...numbers)]: 1 };
 
     return {
