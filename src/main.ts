@@ -19,13 +19,15 @@ import day9part1 from './day9/part1.ts';
 import day9part2 from './day9/part2.ts';
 import day10part1 from './day10/part1.ts';
 import day10part2 from './day10/part2.ts';
+import day11part1 from './day11/part1.ts';
+import day11part2 from './day11/part2.ts';
 
 const main = async () => {
   const start = performance.now();
 
   log.info(`***********************************`);
   log.info("Starting your Deno App");
-  log.info(`Answer: ${await day10part2()}`);
+  log.info(`Answer: ${await day11part2()}`);
   log.info(`Execution time: ${performance.now() - start}ms`);
   log.info(`***********************************`);
 };
